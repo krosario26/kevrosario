@@ -88,12 +88,15 @@ body h6 {
   }
   .home-icons .icon1 {
     transform: translate(-150%, -50%);
+    -webkit-transform: translate(-150%, -50%);
   }
   .home-icons .icon2 {
     transform: translate(-150%, -50%);
+    -webkit-transform: translate(-150%, -50%);
   }
   .home-icons .icon3 {
     transform: translate(-150%, -50%);
+    -webkit-transform: translate(-150%, -50%);
   }
   .home-icons .icon1,
   .home-icons .icon2,
