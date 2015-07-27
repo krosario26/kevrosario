@@ -18,7 +18,7 @@
   transition-duration: 0.3s;
 }
 .navbar .navbar-right li a:hover {
-  color: #333333;
+  color: #000000;
   background-color: #ffffff;
   transition-duration: 0.3s;
 }
@@ -28,10 +28,10 @@
 }
 .navbar .navbar-toggle {
   background-color: #ffffff;
-  border-color: #333333;
+  border-color: #000000;
 }
 .navbar .navbar-toggle .icon-bar {
-  background-color: #333333;
+  background-color: #000000;
 }
 .navbar .navbar-toggle:hover {
   background-color: #0093b2;
@@ -45,7 +45,7 @@
  * Button
  */
 .btn {
-  background-color: #333333;
+  background-color: #000000;
   color: #ffffff;
   border-color: #ffffff;
   border-radius: 0;
@@ -68,7 +68,7 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  background-color: #333333;
+  background-color: #000000;
 }
 body h1,
 body h2,
