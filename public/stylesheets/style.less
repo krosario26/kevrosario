@@ -1,0 +1,173 @@
+//Varaibles for main colors
+@firstColor: #0093b2; //blue
+@secondColor: #fff; //white
+@thirdColor: #333; //dark gray
+
+//Variables for font sizes
+@bigFont: 30px;
+@midFont: 18px;
+@smlFont: 10px;
+
+//Media Queries Variables
+/*
+ * Navigation Bar
+ */
+.navbar {
+  background-color: @secondColor;
+  border-color: @secondColor;
+  border-radius: 0;
+  margin-bottom: 0;
+
+
+  .navbar-brand {
+    color: @firstColor;
+    img {
+      margin-top: -15px;
+    }
+  }
+
+  .navbar-right {
+
+  li a {
+    color: @firstColor;
+    transition-duration: 0.3s;
+
+      &:hover {
+        color: @thirdColor;
+        background-color: @secondColor;
+        transition-duration: 0.3s;
+      }
+
+      &:focus {
+        color: @secondColor;
+        background-color: @firstColor;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    background-color: @secondColor;
+    border-color: @thirdColor;
+
+    .icon-bar {
+      background-color: @thirdColor;
+    }
+
+    &:hover {
+      background-color: @firstColor;
+      border-color: @firstColor;
+
+    }
+
+    &:focus {
+
+      background-color: @firstColor;
+      border-color: @firstColor;
+    }
+  }
+}
+
+
+/*
+ * Button
+ */
+
+ .btn {
+   background-color: @thirdColor;
+   color: @secondColor;
+   border-color: @secondColor;
+   border-radius: 0;
+   transition-duration: 0.2s;
+
+   &:hover {
+     background-color: @firstColor;
+     border-color: @firstColor;
+     transition-duration: 0.2s;
+   }
+
+   a {
+     padding: 30px;
+     color: @secondColor;
+     text-decoration: none;
+     font-size: @midFont;
+   }
+ }
+
+
+/*
+ * Body between Nav Bar and footer
+ */
+
+ body {
+   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+   color: @secondColor;
+   background-color: @thirdColor;
+
+   h1, h2, h3, h4, h5, h6 {
+     font-family: 'Titillium Web', sans-serif;
+   }
+ }
+
+
+@media only screen and (min-width: 770px) {
+  .home-icons {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 200px;
+    transition-duration: 0.3s;
+
+    .icon1 {
+        transform: translate(-150%, -50%);
+    }
+
+    .icon2 {
+        transform: translate(-150%, -50%);
+    }
+
+    .icon3 {
+        transform: translate(-150%, -50%);
+    }
+
+
+    .icon1, .icon2, .icon3 {
+      transition-duration: 0.3s;
+
+      .popup {
+        display: none;
+        transition-duration: 0.3s;
+      }
+
+      &:hover {
+
+        .popup {
+          display: block;
+          transition-duration: 0.3s;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: @secondColor;
+        transition-duration: 0.3s;
+
+        &:hover {
+          color: @firstColor;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+
+  .center {
+    text-align: center;
+  }
+
+.message {
+  text-align: center;
+}
+/*
+ * Footer
+ */

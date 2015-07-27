@@ -1,0 +1,137 @@
+/*
+ * Navigation Bar
+ */
+.navbar {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navbar .navbar-brand {
+  color: #0093b2;
+}
+.navbar .navbar-brand img {
+  margin-top: -15px;
+}
+.navbar .navbar-right li a {
+  color: #0093b2;
+  transition-duration: 0.3s;
+}
+.navbar .navbar-right li a:hover {
+  color: #333333;
+  background-color: #ffffff;
+  transition-duration: 0.3s;
+}
+.navbar .navbar-right li a:focus {
+  color: #ffffff;
+  background-color: #0093b2;
+}
+.navbar .navbar-toggle {
+  background-color: #ffffff;
+  border-color: #333333;
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: #333333;
+}
+.navbar .navbar-toggle:hover {
+  background-color: #0093b2;
+  border-color: #0093b2;
+}
+.navbar .navbar-toggle:focus {
+  background-color: #0093b2;
+  border-color: #0093b2;
+}
+/*
+ * Button
+ */
+.btn {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 0;
+  transition-duration: 0.2s;
+}
+.btn:hover {
+  background-color: #0093b2;
+  border-color: #0093b2;
+  transition-duration: 0.2s;
+}
+.btn a {
+  padding: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+/*
+ * Body between Nav Bar and footer
+ */
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: #333333;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Titillium Web', sans-serif;
+}
+@media only screen and (min-width: 770px) {
+  .home-icons {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 200px;
+    transition-duration: 0.3s;
+  }
+  .home-icons .icon1 {
+    transform: translate(-150%, -50%);
+  }
+  .home-icons .icon2 {
+    transform: translate(-150%, -50%);
+  }
+  .home-icons .icon3 {
+    transform: translate(-150%, -50%);
+  }
+  .home-icons .icon1,
+  .home-icons .icon2,
+  .home-icons .icon3 {
+    transition-duration: 0.3s;
+  }
+  .home-icons .icon1 .popup,
+  .home-icons .icon2 .popup,
+  .home-icons .icon3 .popup {
+    display: none;
+    transition-duration: 0.3s;
+  }
+  .home-icons .icon1:hover .popup,
+  .home-icons .icon2:hover .popup,
+  .home-icons .icon3:hover .popup {
+    display: block;
+    transition-duration: 0.3s;
+  }
+  .home-icons .icon1 a,
+  .home-icons .icon2 a,
+  .home-icons .icon3 a {
+    text-decoration: none;
+    color: #ffffff;
+    transition-duration: 0.3s;
+  }
+  .home-icons .icon1 a:hover,
+  .home-icons .icon2 a:hover,
+  .home-icons .icon3 a:hover {
+    color: #0093b2;
+    transition-duration: 0.3s;
+  }
+}
+.center {
+  text-align: center;
+}
+.message {
+  text-align: center;
+}
+/*
+ * Footer
+ */

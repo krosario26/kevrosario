@@ -1,0 +1,23 @@
+{
+  "name": "kevrosario.com",
+  "version": "1.0.0",
+  "authors": [
+    "Kevin Rosario"
+  ],
+  "description": "My profesional website",
+  "main": "app.js",
+  "license": "MIT",
+  "homepage": "index.ejs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}
