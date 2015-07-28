@@ -88,6 +88,11 @@ body h6 {
     font-size: 100px;
     transition-duration: 0.3s;
   }
+  .home-icons .icon1,
+  .home-icons .icon2,
+  .home-icons .icon3 {
+    display: inline-block;
+  }
   .home-icons .icon1 a,
   .home-icons .icon2 a,
   .home-icons .icon3 a {
