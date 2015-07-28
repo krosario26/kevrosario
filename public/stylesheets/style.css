@@ -98,11 +98,6 @@ body h6 {
     transform: translate(-150%, -50%);
     -webkit-transform: translate(-150%, -50%);
   }
-  .home-icons .icon1,
-  .home-icons .icon2,
-  .home-icons .icon3 {
-    transition-duration: 0.3s;
-  }
   .home-icons .icon1 .popup,
   .home-icons .icon2 .popup,
   .home-icons .icon3 .popup {
