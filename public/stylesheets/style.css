@@ -88,7 +88,7 @@ body h6 {
   }
   .home-icons .icon1 {
     transform: translate(-150%, -50%);
-    -webkit-transform: translate(-150%, -49.99999999%);
+    -webkit-transform: translate(-150%, -50%);
   }
   .home-icons .icon2 {
     transform: translate(-150%, -50%);
@@ -131,17 +131,10 @@ body h6 {
     font-size: 100px;
     transition-duration: 0.3s;
   }
-  .home-icons .icon1 .popup,
-  .home-icons .icon2 .popup,
-  .home-icons .icon3 .popup {
-    display: none;
-    transition-duration: 0.3s;
-  }
-  .home-icons .icon1:hover .popup,
-  .home-icons .icon2:hover .popup,
-  .home-icons .icon3:hover .popup {
-    display: block;
-    transition-duration: 0.3s;
+  .home-icons .icon1,
+  .home-icons .icon2,
+  .home-icons .icon3 {
+    display: inline-block;
   }
   .home-icons .icon1 a,
   .home-icons .icon2 a,
