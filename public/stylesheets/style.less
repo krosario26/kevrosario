@@ -8,66 +8,6 @@
 @midFont: 18px;
 @smlFont: 10px;
 
-//Media Queries Variables
-/*
- * Navigation Bar
- */
-.navbar {
-  background-color: @secondColor;
-  border-color: @secondColor;
-  border-radius: 0;
-  margin-bottom: 0;
-
-
-  .navbar-brand {
-    color: @firstColor;
-    img {
-      margin-top: -15px;
-    }
-  }
-
-  .navbar-right {
-
-  li a {
-    color: @firstColor;
-    transition-duration: 0.3s;
-
-      &:hover {
-        color: @thirdColor;
-        background-color: @secondColor;
-        transition-duration: 0.3s;
-      }
-
-      &:focus {
-        color: @secondColor;
-        background-color: @firstColor;
-      }
-    }
-  }
-
-  .navbar-toggle {
-    background-color: @secondColor;
-    border-color: @thirdColor;
-
-    .icon-bar {
-      background-color: @thirdColor;
-    }
-
-    &:hover {
-      background-color: @firstColor;
-      border-color: @firstColor;
-
-    }
-
-    &:focus {
-
-      background-color: @firstColor;
-      border-color: @firstColor;
-    }
-  }
-}
-
-
 /*
  * Button
  */
@@ -172,15 +112,13 @@
 
     .icon1, .icon2, .icon3 {
 
-      display: inline-block;
-
       a {
         text-decoration: none;
-        color: @thirdColor;
+        color: @firstColor;
         transition-duration: 0.3s;
 
-        &:hover {
-          color: @firstColor;
+        &:focus {
+          color: @secondColor;
           transition-duration: 0.3s;
         }
       }

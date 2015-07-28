@@ -1,47 +1,4 @@
 /*
- * Navigation Bar
- */
-.navbar {
-  background-color: #ffffff;
-  border-color: #ffffff;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-.navbar .navbar-brand {
-  color: #0093b2;
-}
-.navbar .navbar-brand img {
-  margin-top: -15px;
-}
-.navbar .navbar-right li a {
-  color: #0093b2;
-  transition-duration: 0.3s;
-}
-.navbar .navbar-right li a:hover {
-  color: #000000;
-  background-color: #ffffff;
-  transition-duration: 0.3s;
-}
-.navbar .navbar-right li a:focus {
-  color: #ffffff;
-  background-color: #0093b2;
-}
-.navbar .navbar-toggle {
-  background-color: #ffffff;
-  border-color: #000000;
-}
-.navbar .navbar-toggle .icon-bar {
-  background-color: #000000;
-}
-.navbar .navbar-toggle:hover {
-  background-color: #0093b2;
-  border-color: #0093b2;
-}
-.navbar .navbar-toggle:focus {
-  background-color: #0093b2;
-  border-color: #0093b2;
-}
-/*
  * Button
  */
 .btn {
@@ -131,22 +88,17 @@ body h6 {
     font-size: 100px;
     transition-duration: 0.3s;
   }
-  .home-icons .icon1,
-  .home-icons .icon2,
-  .home-icons .icon3 {
-    display: inline-block;
-  }
   .home-icons .icon1 a,
   .home-icons .icon2 a,
   .home-icons .icon3 a {
     text-decoration: none;
-    color: #000000;
+    color: #0093b2;
     transition-duration: 0.3s;
   }
-  .home-icons .icon1 a:hover,
-  .home-icons .icon2 a:hover,
-  .home-icons .icon3 a:hover {
-    color: #0093b2;
+  .home-icons .icon1 a:focus,
+  .home-icons .icon2 a:focus,
+  .home-icons .icon3 a:focus {
+    color: #ffffff;
     transition-duration: 0.3s;
   }
 }
