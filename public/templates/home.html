@@ -21,14 +21,17 @@
   </div>
 </div>
 
-<div class="hidden-xs message"><h3>Hover over the icons below!</h3></div>
+<div class="hidden-xs message"><h1>Hello there, my name is Kevin Rosario and I'm a Web Developer.</h1></div>
+<div class="hidden-xs message2"><h1>How can I help you today?</h1></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
-  console.log("ready!");
+
 
   $('.home-icons').hover(function() {
-    $('.message').fadeOut('slow');
+    $('.message').fadeOut('slow', function() {
+      $('.message2').fadeIn('slow');
+    });
   });
 });
 </script>

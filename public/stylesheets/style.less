@@ -115,11 +115,11 @@
 
       a {
         text-decoration: none;
-        color: @firstColor;
+        color: @thirdColor;
         transition-duration: 0.3s;
 
-        &:focus {
-          color: @secondColor;
+        &:hover {
+          color: @firstColor;
           transition-duration: 0.3s;
         }
       }
@@ -133,6 +133,11 @@
   }
 
 .message {
+  text-align: center;
+}
+
+.message2 {
+  display: none;
   text-align: center;
 }
 /*
