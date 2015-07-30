@@ -48,6 +48,7 @@
    }
  }
 
+//Desktop
 
 @media only screen and (min-width: 770px) {
   .home-icons {
@@ -102,12 +103,41 @@
   }
 }
 
-@media only screen and (max-width: 769px) {
+// Tablet
+@media only screen and (max-width: 769px) and (min-width: 400px) {
   .home-icons {
     position: fixed;
     top: 30%;
     left: 5%;
     font-size: 150px;
+    transition-duration: 0.3s;
+
+
+    .icon1, .icon2, .icon3 {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        color: @thirdColor;
+        transition-duration: 0.3s;
+
+        &:hover {
+          color: @firstColor;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+// Smartphone
+
+@media only screen and (max-width: 399px) {
+  .home-icons {
+    position: fixed;
+    top: 30%;
+    left: 5%;
+    font-size: 90px;
     transition-duration: 0.3s;
 
 
