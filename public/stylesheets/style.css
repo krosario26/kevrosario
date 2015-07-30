@@ -113,7 +113,9 @@ body h6 {
 .message {
   text-align: center;
 }
-.message2 {
+.message2,
+.message3,
+.message4 {
   display: none;
   text-align: center;
 }

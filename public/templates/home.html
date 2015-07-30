@@ -21,16 +21,22 @@
   </div>
 </div>
 
-<div class="hidden-xs message"><h2>Hello there, my name is Kevin Rosario and I'm a Web Developer.</h2></div>
-<div class="hidden-xs message2"><h2>How can I help you today?</h2></div>
+<div class="hidden-xs message"><h2>Welcome, my name is <b>Kevin Rosario</b></h2></div>
+<div class="hidden-xs message2"><h2>I'm a Web Developer</h2></div>
+<div class="hidden-xs message3"><h2>If you have project in mind</h2></div>
+<div class="hidden-xs message4"><h2>Feel free to contact me</h2></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
 
 
-  $('.home-icons').hover(function() {
-    $('.message').fadeOut('slow', function() {
-      $('.message2').fadeIn('slow');
+  $('.body').ready(function() {
+    $('.message').delay(1500).fadeOut('slow', function() {
+      $('.message2').fadeIn('slow').delay(1800).fadeOut('slow', function() {
+        $('.message3').fadeIn('slow').delay(2200).fadeOut('slow', function() {
+          $('.message4').fadeIn('slow');
+        });
+      });
     });
   });
 });
