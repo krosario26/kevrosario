@@ -30,15 +30,18 @@
 <script type="text/javascript">
 $(document).ready(function() {
 
-
-  $('.body').ready(function() {
-    $('.message').delay(1500).fadeOut('slow', function() {
-      $('.message2').fadeIn('slow').delay(1800).fadeOut('slow', function() {
-        $('.message3').fadeIn('slow').delay(2200).fadeOut('slow', function() {
-          $('.message4').fadeIn('slow');
+  function fadingMessage() {
+    $('.body').ready(function() {
+      $('.message').fadeIn('slow').delay(2000).fadeOut('slow', function() {
+        $('.message2').fadeIn('slow').delay(2000).fadeOut('slow', function() {
+          $('.message3').fadeIn('slow').delay(2000).fadeOut('slow', function() {
+            $('.message4').fadeIn('slow').delay(2000).fadeOut('slow', fadingMessage);
+          });
         });
       });
     });
-  });
+  }
+
+fadingMessage();
 });
 </script>
