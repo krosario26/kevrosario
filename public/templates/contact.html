@@ -1,1 +1,27 @@
-<h1> Contact Me Page </h1>
+<h1 class="center"> Please, drop a line! </h1>
+
+
+<section class="container">
+  <form method="post" action="/send">
+  		<div class="form-group">
+  			<label for="inputFirstName">First Name</label>
+  				<input type="firstName" name="firstName" class="form-control" id="inputFirstName" placeholder="Enter First Name">
+  		</div>
+  		<div class="form-group">
+    		<label for="inputLastName">Last Name</label>
+    		<input type="lastName" name="lastName" class="form-control" id="inputLastName" placeholder="Enter Last Name">
+  		</div>
+  		<div class="form-group">
+  			<label for="inputEmail">Email</label>
+  			<input type="email" name="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+  		</div>
+  		<div class="form-group">
+  			<label for="inputProjects">Project Description</label>
+  			<textarea type="text" name="description" class="form-control" id="inputProject" placeholder="Enter Project Description"></textarea>
+  		</div>
+  		<div class="">
+  			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  			<button type="submit" class="btn btn-primary">Submit</button>
+  		</div>
+  </form>
+</section>
