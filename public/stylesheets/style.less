@@ -176,13 +176,19 @@
  * Form
  */
 
-.ng-invalid.ng-dirty {
-  border-color: #7a787e;
-}
+ form {
+   .form-group {
+     .form-control {
+       border-radius: 0;
+       height: 60px;
+       box-shadow: 0;
+       border-style: solid;
+       border-color: @thirdColor;
+       font-size: @bigFont;
+     }
+   }
+ }
 
-.ng-valid.ng-dirty {
-  border-color: #7afa89;
-}
 
 
 /*

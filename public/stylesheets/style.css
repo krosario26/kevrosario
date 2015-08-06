@@ -150,11 +150,13 @@ body h6 {
 /*
  * Form
  */
-.ng-invalid.ng-dirty {
-  border-color: #7a787e;
-}
-.ng-valid.ng-dirty {
-  border-color: #7afa89;
+form .form-group .form-control {
+  border-radius: 0;
+  height: 60px;
+  box-shadow: 0;
+  border-style: solid;
+  border-color: #000000;
+  font-size: 30px;
 }
 /*
  * Footer
