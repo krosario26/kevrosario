@@ -150,13 +150,21 @@ body h6 {
 /*
  * Form
  */
-form .form-group .form-control {
+form .form-group input {
   border-radius: 0;
   height: 60px;
   box-shadow: 0;
   border-style: solid;
   border-color: #000000;
   font-size: 30px;
+}
+form .form-group textarea {
+  border-radius: 0;
+  height: 120px;
+  box-shadow: 0;
+  border-style: solid;
+  border-color: #000000;
+  font-size: 18px;
 }
 /*
  * Footer
