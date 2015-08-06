@@ -13,8 +13,8 @@
   border-color: #0093b2;
   transition-duration: 0.2s;
 }
-.btn a {
-  padding: 30px;
+.btn .submitWord {
+  padding: 10px;
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
@@ -146,6 +146,15 @@ body h6 {
 .message4 {
   display: none;
   text-align: center;
+}
+/*
+ * Form
+ */
+.ng-invalid.ng-dirty {
+  border-color: #7a787e;
+}
+.ng-valid.ng-dirty {
+  border-color: #7afa89;
 }
 /*
  * Footer

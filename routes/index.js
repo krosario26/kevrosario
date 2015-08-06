@@ -29,6 +29,7 @@ router.post('/send', function(req, res) {
       return console.log(error);
     }
     console.log('Message sent: ' + info.response);
+    res.render({success: 'Messsage was successfully sent!'})
 
   });
 });
