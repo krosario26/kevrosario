@@ -166,10 +166,12 @@ form .form-group textarea {
   border-color: #000000;
   font-size: 18px;
 }
-.alert-success {
-  display: none;
-  border-radius: 0;
-  margin-top: 10px;
+.paragraph {
+  font-size: 18px;
+}
+.list-group .list-group-item:hover {
+  background-color: #0093b2;
+  color: #ffffff;
 }
 /*
  * Footer

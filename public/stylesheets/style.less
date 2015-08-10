@@ -197,11 +197,19 @@
    }
  }
 
-.alert-success {
-  display: none;
-  border-radius: 0;
-  margin-top: 10px;
-}
+ .paragraph {
+   font-size: @midFont;
+ }
+
+ .list-group {
+   .list-group-item {
+
+     &:hover {
+       background-color: @firstColor;
+       color: @secondColor;
+     }
+   }
+ }
 /*
  * Footer
  */
