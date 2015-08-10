@@ -1,7 +1,15 @@
 var express = require('express');
+var flash = require('connect-flash');
 var router = express.Router();
 var app = express();
 var nodemailer = require('nodemailer');
+
+/*  Using connect-flash */
+app.use(flash());
+app.use(function(req, res, next){
+  res.locals.success = req.flash('success');
+  res.locals.errors = req.flash('error');
+})
 
 /* GET home page. */
 router.get('/*', function(req, res, next) {
@@ -27,9 +35,10 @@ router.post('/send', function(req, res) {
   transporter.sendMail(mailoptions, function(error, info) {
     if(error) {
       return console.log(error);
+    } else {
+      console.log('Message sent: ' + info.response);
+      res.redirect('/contact');
     }
-    console.log('Message sent: ' + info.response);
-    
   });
 });
 
