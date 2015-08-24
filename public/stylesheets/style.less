@@ -8,38 +8,6 @@
 @midFont: 18px;
 @smlFont: 10px;
 
-/*
- * Button
- */
-
- .btn {
-   background-color: @firstColor;
-   border-color: @firstColor;
-   border-width: thick;
-   border-radius: 0;
-   transition-duration: 0.2s;
-
-   &:hover {
-     background-color: @secondColor;
-     border-color: @firstColor;
-     color: @secondColor;
-     transition-duration: 0.2s;
-
-     .submitWord {
-       color: @firstColor;
-       transition-duration: 0.2s;
-     }
-   }
-
-   .submitWord {
-     padding: 1px 10em 1px 10em;
-     color: @secondColor;
-     text-decoration: none;
-     font-size: @midFont;
-     transition-duration: 0.2s;
-   }
- }
-
 
 /*
  * Body between Nav Bar and footer
@@ -91,18 +59,96 @@
 //Desktop Size
 
 @media only screen and (min-width: 770px) {
+  .btn {
+    background-color: @firstColor;
+    border-color: @firstColor;
+    border-width: thick;
+    border-radius: 0;
+    transition-duration: 0.2s;
 
+    &:hover {
+      background-color: @secondColor;
+      border-color: @firstColor;
+      color: @secondColor;
+      transition-duration: 0.2s;
+
+      .submitWord {
+        color: @firstColor;
+        transition-duration: 0.2s;
+      }
+    }
+
+    .submitWord {
+      padding: 1px 10em 1px 10em;
+      color: @secondColor;
+      text-decoration: none;
+      font-size: @midFont;
+      transition-duration: 0.2s;
+    }
+  }
 }
 
 // Tablet Size
 @media only screen and (max-width: 769px) and (min-width: 500px) {
+  .btn {
+    background-color: @firstColor;
+    border-color: @firstColor;
+    border-width: thick;
+    border-radius: 0;
+    transition-duration: 0.2s;
 
+    &:hover {
+      background-color: @secondColor;
+      border-color: @firstColor;
+      color: @secondColor;
+      transition-duration: 0.2s;
+
+      .submitWord {
+        color: @firstColor;
+        transition-duration: 0.2s;
+      }
+    }
+
+    .submitWord {
+      padding: 1px 10em 1px 10em;
+      color: @secondColor;
+      text-decoration: none;
+      font-size: @midFont;
+      transition-duration: 0.2s;
+    }
+  }
 }
 
 // Smartphone Size
 
 @media only screen and (max-width: 499px) {
+  .btn {
+    background-color: @firstColor;
+    border-color: @firstColor;
+    border-width: thick;
+    border-radius: 0;
+    transition-duration: 0.2s;
 
+    &:hover {
+      background-color: @secondColor;
+      border-color: @firstColor;
+      color: @secondColor;
+      transition-duration: 0.2s;
+
+      .submitWord {
+        color: @firstColor;
+        transition-duration: 0.2s;
+      }
+    }
+
+    .submitWord {
+      padding: 1px 5em 1px 5em;
+      color: @secondColor;
+      text-decoration: none;
+      font-size: @midFont;
+      transition-duration: 0.2s;
+    }
+  }
 }
 
 

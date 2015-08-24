@@ -1,31 +1,4 @@
 /*
- * Button
- */
-.btn {
-  background-color: #003a47;
-  border-color: #003a47;
-  border-width: thick;
-  border-radius: 0;
-  transition-duration: 0.2s;
-}
-.btn:hover {
-  background-color: #ffffff;
-  border-color: #003a47;
-  color: #ffffff;
-  transition-duration: 0.2s;
-}
-.btn:hover .submitWord {
-  color: #003a47;
-  transition-duration: 0.2s;
-}
-.btn .submitWord {
-  padding: 1px 10em 1px 10em;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-  transition-duration: 0.2s;
-}
-/*
  * Body between Nav Bar and footer
  */
 body {
@@ -68,6 +41,84 @@ body h6 {
   border: solid #ffffff;
   color: #003a47;
   transition-duration: 0.2s;
+}
+@media only screen and (min-width: 770px) {
+  .btn {
+    background-color: #003a47;
+    border-color: #003a47;
+    border-width: thick;
+    border-radius: 0;
+    transition-duration: 0.2s;
+  }
+  .btn:hover {
+    background-color: #ffffff;
+    border-color: #003a47;
+    color: #ffffff;
+    transition-duration: 0.2s;
+  }
+  .btn:hover .submitWord {
+    color: #003a47;
+    transition-duration: 0.2s;
+  }
+  .btn .submitWord {
+    padding: 1px 10em 1px 10em;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition-duration: 0.2s;
+  }
+}
+@media only screen and (max-width: 769px) and (min-width: 500px) {
+  .btn {
+    background-color: #003a47;
+    border-color: #003a47;
+    border-width: thick;
+    border-radius: 0;
+    transition-duration: 0.2s;
+  }
+  .btn:hover {
+    background-color: #ffffff;
+    border-color: #003a47;
+    color: #ffffff;
+    transition-duration: 0.2s;
+  }
+  .btn:hover .submitWord {
+    color: #003a47;
+    transition-duration: 0.2s;
+  }
+  .btn .submitWord {
+    padding: 1px 10em 1px 10em;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition-duration: 0.2s;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .btn {
+    background-color: #003a47;
+    border-color: #003a47;
+    border-width: thick;
+    border-radius: 0;
+    transition-duration: 0.2s;
+  }
+  .btn:hover {
+    background-color: #ffffff;
+    border-color: #003a47;
+    color: #ffffff;
+    transition-duration: 0.2s;
+  }
+  .btn:hover .submitWord {
+    color: #003a47;
+    transition-duration: 0.2s;
+  }
+  .btn .submitWord {
+    padding: 1px 5em 1px 5em;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition-duration: 0.2s;
+  }
 }
 .center {
   text-align: center;
