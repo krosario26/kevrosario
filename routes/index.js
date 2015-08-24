@@ -29,7 +29,7 @@ router.post('/send', function(req, res) {
     from: 'kevrosario.com <krosariopro@gmail.com>',
     to: 'kevin@kevrosario.com',
     subject: 'kevrosario Message',
-    text: 'Hi my name is ' + req.body.firstName + " " + req.body.lastName + "; " + req.body.description + " my email is " + req.body.email
+    text: 'Hi my name is ' + req.body.firstName + " " + req.body.lastName + ". My email is " + req.body.email
   };
 
   transporter.sendMail(mailoptions, function(error, info) {
@@ -37,7 +37,7 @@ router.post('/send', function(req, res) {
       return console.log(error);
     } else {
       console.log('Message sent: ' + info.response);
-      res.redirect('/contact');
+      res.redirect('/');
     }
   });
 });

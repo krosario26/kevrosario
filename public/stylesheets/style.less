@@ -1,5 +1,5 @@
 //Varaibles for main colors
-@firstColor: #0093b2; //blue
+@firstColor: #003a47; //blue
 @secondColor: #fff; //white
 @thirdColor: #000; //black
 
@@ -13,23 +13,30 @@
  */
 
  .btn {
-   background-color: @thirdColor;
-   color: @secondColor;
-   border-color: @secondColor;
+   background-color: @firstColor;
+   border-color: @firstColor;
+   border-width: thick;
    border-radius: 0;
    transition-duration: 0.2s;
 
    &:hover {
-     background-color: @firstColor;
+     background-color: @secondColor;
      border-color: @firstColor;
+     color: @secondColor;
      transition-duration: 0.2s;
+
+     .submitWord {
+       color: @firstColor;
+       transition-duration: 0.2s;
+     }
    }
 
    .submitWord {
-     padding: 10px;
+     padding: 1px 10em 1px 10em;
      color: @secondColor;
      text-decoration: none;
      font-size: @midFont;
+     transition-duration: 0.2s;
    }
  }
 
@@ -48,114 +55,54 @@
    }
  }
 
-//Desktop
+ .jumbotron {
+   background-color: @firstColor;
+   opacity: 0.8;
+   color: @secondColor;
+
+   #jbContent {
+     margin-top: 2em;
+     margin-bottom: 2em;
+
+     img {
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+     button {
+       padding: 10px 50px 10px 50px;
+       background-color: @firstColor;
+       border: solid @secondColor;
+       color: @secondColor;
+       margin-top: 30px;
+       font-size: @midFont;
+       transition-duration: 0.2s;
+
+       &:hover {
+         background-color: @secondColor;
+         border: solid @secondColor;
+         color: @firstColor;
+         transition-duration: 0.2s;
+       }
+     }
+   }
+ }
+
+//Desktop Size
 
 @media only screen and (min-width: 770px) {
-  .home-icons {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    font-size: 200px;
-    transition-duration: 0.3s;
 
-    .icon1 {
-        transform: translate(-150%, -50%);
-        -webkit-transform: translate(-150%, -50%);
-    }
-
-    .icon2 {
-        transform: translate(-150%, -50%);
-        -webkit-transform: translate(-150%, -50%);
-    }
-
-    .icon3 {
-        transform: translate(-150%, -50%);
-        -webkit-transform: translate(-150%, -50%);
-    }
-
-
-    .icon1, .icon2, .icon3 {
-
-      .popup {
-        display: none;
-        transition-duration: 0.3s;
-      }
-
-      &:hover {
-
-        .popup {
-          display: block;
-          transition-duration: 0.3s;
-        }
-      }
-
-      a {
-        text-decoration: none;
-        color: @thirdColor;
-        transition-duration: 0.3s;
-
-        &:hover {
-          color: @firstColor;
-          transition-duration: 0.3s;
-        }
-      }
-    }
-  }
 }
 
-// Tablet
+// Tablet Size
 @media only screen and (max-width: 769px) and (min-width: 500px) {
-  .home-icons {
-    position: fixed;
-    top: 30%;
-    left: 5%;
-    font-size: 150px;
-    transition-duration: 0.3s;
 
-
-    .icon1, .icon2, .icon3 {
-      display: inline-block;
-
-      a {
-        text-decoration: none;
-        color: @thirdColor;
-        transition-duration: 0.3s;
-
-        &:hover {
-          color: @firstColor;
-          transition-duration: 0.3s;
-        }
-      }
-    }
-  }
 }
 
-// Smartphone
+// Smartphone Size
 
 @media only screen and (max-width: 499px) {
-  .home-icons {
-    position: fixed;
-    top: 30%;
-    left: 5%;
-    font-size: 80px;
-    transition-duration: 0.3s;
 
-
-    .icon1, .icon2, .icon3 {
-      display: inline-block;
-
-      a {
-        text-decoration: none;
-        color: @thirdColor;
-        transition-duration: 0.3s;
-
-        &:hover {
-          color: @firstColor;
-          transition-duration: 0.3s;
-        }
-      }
-    }
-  }
 }
 
 
@@ -177,22 +124,26 @@
  */
 
  form {
+   h1 {
+     margin: auto auto 30px auto;
+   }
+
    .form-group {
      input {
        border-radius: 0;
        height: 60px;
-       box-shadow: 0;
-       border-style: solid;
-       border-color: @thirdColor;
+       border: none ! important;
+       box-shadow: none ! important;
+       outline: none ! important;
        font-size: @bigFont;
-     }
-     textarea {
-       border-radius: 0;
-       height: 120px;
-       box-shadow: 0;
-       border-style: solid;
-       border-color: @thirdColor;
-       font-size: @midFont;
+       transition-duration: 0.2s;
+
+
+
+       &:focus {
+         border-bottom: @firstColor solid 5px ! important;
+         transition-duration: 0.2s;
+       }
      }
    }
  }

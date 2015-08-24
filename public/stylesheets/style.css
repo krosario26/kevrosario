@@ -2,22 +2,28 @@
  * Button
  */
 .btn {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #ffffff;
+  background-color: #003a47;
+  border-color: #003a47;
+  border-width: thick;
   border-radius: 0;
   transition-duration: 0.2s;
 }
 .btn:hover {
-  background-color: #0093b2;
-  border-color: #0093b2;
+  background-color: #ffffff;
+  border-color: #003a47;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+.btn:hover .submitWord {
+  color: #003a47;
   transition-duration: 0.2s;
 }
 .btn .submitWord {
-  padding: 10px;
+  padding: 1px 10em 1px 10em;
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
+  transition-duration: 0.2s;
 }
 /*
  * Body between Nav Bar and footer
@@ -35,105 +41,33 @@ body h5,
 body h6 {
   font-family: 'Titillium Web', sans-serif;
 }
-@media only screen and (min-width: 770px) {
-  .home-icons {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    font-size: 200px;
-    transition-duration: 0.3s;
-  }
-  .home-icons .icon1 {
-    transform: translate(-150%, -50%);
-    -webkit-transform: translate(-150%, -50%);
-  }
-  .home-icons .icon2 {
-    transform: translate(-150%, -50%);
-    -webkit-transform: translate(-150%, -50%);
-  }
-  .home-icons .icon3 {
-    transform: translate(-150%, -50%);
-    -webkit-transform: translate(-150%, -50%);
-  }
-  .home-icons .icon1 .popup,
-  .home-icons .icon2 .popup,
-  .home-icons .icon3 .popup {
-    display: none;
-    transition-duration: 0.3s;
-  }
-  .home-icons .icon1:hover .popup,
-  .home-icons .icon2:hover .popup,
-  .home-icons .icon3:hover .popup {
-    display: block;
-    transition-duration: 0.3s;
-  }
-  .home-icons .icon1 a,
-  .home-icons .icon2 a,
-  .home-icons .icon3 a {
-    text-decoration: none;
-    color: #000000;
-    transition-duration: 0.3s;
-  }
-  .home-icons .icon1 a:hover,
-  .home-icons .icon2 a:hover,
-  .home-icons .icon3 a:hover {
-    color: #0093b2;
-    transition-duration: 0.3s;
-  }
+.jumbotron {
+  background-color: #003a47;
+  opacity: 0.8;
+  color: #ffffff;
 }
-@media only screen and (max-width: 769px) and (min-width: 500px) {
-  .home-icons {
-    position: fixed;
-    top: 30%;
-    left: 5%;
-    font-size: 150px;
-    transition-duration: 0.3s;
-  }
-  .home-icons .icon1,
-  .home-icons .icon2,
-  .home-icons .icon3 {
-    display: inline-block;
-  }
-  .home-icons .icon1 a,
-  .home-icons .icon2 a,
-  .home-icons .icon3 a {
-    text-decoration: none;
-    color: #000000;
-    transition-duration: 0.3s;
-  }
-  .home-icons .icon1 a:hover,
-  .home-icons .icon2 a:hover,
-  .home-icons .icon3 a:hover {
-    color: #0093b2;
-    transition-duration: 0.3s;
-  }
+.jumbotron #jbContent {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-@media only screen and (max-width: 499px) {
-  .home-icons {
-    position: fixed;
-    top: 30%;
-    left: 5%;
-    font-size: 80px;
-    transition-duration: 0.3s;
-  }
-  .home-icons .icon1,
-  .home-icons .icon2,
-  .home-icons .icon3 {
-    display: inline-block;
-  }
-  .home-icons .icon1 a,
-  .home-icons .icon2 a,
-  .home-icons .icon3 a {
-    text-decoration: none;
-    color: #000000;
-    transition-duration: 0.3s;
-  }
-  .home-icons .icon1 a:hover,
-  .home-icons .icon2 a:hover,
-  .home-icons .icon3 a:hover {
-    color: #0093b2;
-    transition-duration: 0.3s;
-  }
+.jumbotron #jbContent img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.jumbotron #jbContent button {
+  padding: 10px 50px 10px 50px;
+  background-color: #003a47;
+  border: solid #ffffff;
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: 18px;
+  transition-duration: 0.2s;
+}
+.jumbotron #jbContent button:hover {
+  background-color: #ffffff;
+  border: solid #ffffff;
+  color: #003a47;
+  transition-duration: 0.2s;
 }
 .center {
   text-align: center;
@@ -150,27 +84,27 @@ body h6 {
 /*
  * Form
  */
+form h1 {
+  margin: auto auto 30px auto;
+}
 form .form-group input {
   border-radius: 0;
   height: 60px;
-  box-shadow: 0;
-  border-style: solid;
-  border-color: #000000;
+  border: none ! important;
+  box-shadow: none ! important;
+  outline: none ! important;
   font-size: 30px;
+  transition-duration: 0.2s;
 }
-form .form-group textarea {
-  border-radius: 0;
-  height: 120px;
-  box-shadow: 0;
-  border-style: solid;
-  border-color: #000000;
-  font-size: 18px;
+form .form-group input:focus {
+  border-bottom: #003a47 solid 5px ! important;
+  transition-duration: 0.2s;
 }
 .paragraph {
   font-size: 18px;
 }
 .list-group .list-group-item:hover {
-  background-color: #0093b2;
+  background-color: #003a47;
   color: #ffffff;
 }
 /*

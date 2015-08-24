@@ -12,15 +12,40 @@
   </head>
   <body>
 
-    <a href="/"><img class="visible-lg" src="/images/mylogo.png" /></a>
-    <a href="/"><img class="hidden-lg" src="/images/mylogo.png" width="150" height="94"/></a>
+    <section class="jumbotron">
+      <div class="container" id="jbContent">
+        <div class="center">
+          <img class="visible-lg" src="/images/mylogo.png" />
+          <img class="hidden-lg" src="/images/mylogo.png" width="150" height="94"/>
+          <h1>Welcome, my name is <b>Kevin Rosario</b></h1>
+          <h2>I'm a young web developer that has the desire and skills to help bring
+            web presence and solutions to all my clients</h2>
+          <a href="#form"><button><b>Contact Me<b></button></a>
+        </div>
+      </div>
+    </section>
 
-    <!-- End of Navigation Bar -->
-    <div ui-view></div>
+    <!-- Contact form -->
+    <section class="container" id="form">
+      <form name="contactForm" method="post" action="/send">
+      		<div class="center"><h1>Contact Me If Anything!!</h1></div>
+          <div class="form-group">
+      				<input type="firstName" name="firstName" class="form-control" id="inputFirstName" required="firstName" placeholder="First Name">
+      		</div>
+      		<div class="form-group">
+        		<input type="lastName" name="lastName" class="form-control" id="inputLastName" required="lastName" placeholder="Last Name">
+      		</div>
+      		<div class="form-group">
+      			<input type="email" name="email" class="form-control" id="inputEmail" required="email" placeholder="Email">
+      		</div>
+      		<div class="center">
+      			<button type="submit" class="btn btn-primary"><div class="submitWord">Submit</div></button>
+      		</div>
+      </form>
+    </section>
+
 
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/javascripts/routes/index.js"></script>
   </body>
